@@ -2,13 +2,7 @@ require 'eventmachine'
 require 'em-http'
 require 'em-http/middleware/oauth'
 require 'json'
-
-OAuthConfig = {
-  :consumer_key     => 'QuCXNfeQGpLeP9CMrvKFxQ',
-  :consumer_secret  => 'Q3iSTXPg8QkvUpBwuYNd8sKr6WvDX0MjEIGVZ74jo',
-  :access_token     => '75585804-GoTsKV62tnHJpu56YWyG4qBE79u264ihtFMUl3vck',
-  :access_token_secret => '1v8zU4qKudcRymjOX7NsLUldr7gZ8zfyysXek7hA5o0'
-}
+require_relative 'oauth_configuration'
 
 EM.run do
 
